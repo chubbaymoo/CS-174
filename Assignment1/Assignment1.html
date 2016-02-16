@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Information Survey</title>
+</head>
+
+<body>
+	<form action="Assignment1.php" method="post">
+		<fieldset>
+			<legend>Please enter your information!</legend>
+			<p>
+				First Name: <br>
+				<input type="text" name="FirstName">
+				<br>
+				Last Name: <br>
+				<input type="text" name="LastName">
+				<br>
+				<label>Sex:</label><br>
+				<input type="radio" name="Sex" value="Male" /> Male
+				<input type="radio" name="Sex" value="Female" /> Female
+				<input type="radio" name="Sex" value="Other" /> Identifies as other
+			</p>
+			<p>
+				<label>School:</label>
+				<select name="School">
+					<option value="San Jose State University" selected>San Jose State University</option>
+					<option value="De Anza Community College">De Anza Community College</option>
+					<option value="University of California, Davis">University of California, Davis</option>
+					<option value="University of the Pacific">University of the Pacific</option>
+				</select>
+			</p>
+			<p>
+				Phone Number: <br>
+				<input type="text" name="PhoneNo">
+			</p>
+			<p>
+				<input type="submit" value="Submit" />
+			</p>
+		</fieldset>
+	</form>
+
+</body>
+</html>
