@@ -122,33 +122,6 @@
     		}
     		print "</table>\n";
 
-
-			/*print "<table border='1'> \n";
-
-			$result = $con->query($query);
-			$row = $result->fetch(PDO::FETCH_ASSOC);
-
-			print "<tr>\n";
-			foreach ($row as $field => $value) {
-				print "<th>$field</th> \n";
-			}
-			print "<tr>\n";
-
-			if ((strlen($first) > 0) && (strlen($last) > 0)) {
-				$query = "SELECT * FROM contact WHERE FirstName = '$first' AND LastName = '$last'";
-			}
-
-			$data = $con->query($query);
-			$data->setFetchMode(PDO::FETCH_ASSOC);
-
-			foreach ($data as $row) {
-				print "<tr>\n";
-				foreach ($row as $name => $value) {
-					print "<td>$value</td>\n";
-				}
-				print "</tr>\n";
-			}
-			print "</table>\n";*/
 		}
 		catch(PDOException $ex) {
 			echo 'ERROR: ' . $ex->getMessage();
